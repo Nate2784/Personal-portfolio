@@ -1,0 +1,130 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --main-body-color:rgb(237, 255, 255);
+    --main-header-color: rgba(1, 87, 87, 0.514);
+    --main-header-text:rgb(255, 255, 255);
+    --span:rgb(30, 119, 124);
+    --About-text-color:rgb(245, 245, 245);
+    --cards-color:rgb(255, 255, 255);
+    --section-span: rgba(161, 209, 212, 0.692);
+}
+/* Universal */
+a{
+    text-decoration: none;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+}
+span{
+    color: var(--span);
+}
+/* body */
+body{
+    background-color: var(--main-body-color);
+}
+/* hearer */
+header{
+    /* background-color: var(--main-header-color); */
+    border-radius:0 0 0px 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: space-between;
+    padding:  20px 25px;
+    font-weight: 600;
+    text-shadow: 1px 1px 14px #00000092;
+    position:fixed;
+    width: 100%;
+}
+.Brand h2{
+    pointer-events: none;
+    font-size: x-large;
+    color: var(--main-header-text);
+}
+.Header-nav ul{
+    display: flex;
+    list-style: none;
+}
+.Header-nav li{
+    font-size: larger;
+    padding:0 15px;
+}
+.Header-nav a{
+    color: var(--main-header-text);
+}
+.Header-nav a:hover{
+    color: var(--span);
+}
+
+.Contact-a a{
+    font-size: large;
+    background-color: transparent;
+    border: var(--span) 3px solid;
+    padding: 7px;
+    border-radius: .5em;
+}
+/* hearer end*/
+/* sections */
+.Contact, .About, .Services{
+    display: block;
+    padding: 6% 20px 20px 20px;
+}
+.title{
+    padding-left: 10px;
+    font-size: large;
+    text-decoration: underline 2px;  
+    writing-mode: vertical-lr;
+    text-underline-position: left;
+    text-decoration-style:dotted;
+    text-decoration-color: var(--span);
+}
+/* home page */
+.Home{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(1, 46, 46, 0.7)), url(../Sources/About1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    text-shadow: 2px 2px 4px #000000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Home h1, h3{
+    font-weight: 900;
+    font-size: x-large;
+    text-align: center;
+    color: var(--About-text-color);
+}
+.Home span{
+    text-shadow: 1px 2px 15px rgba(1, 87, 87, 0.514);
+}
+.home-button{
+    font-weight: 600;
+    border: var(--span) 2px solid;
+    border-radius:10px ;
+    padding: 8px;
+    margin: 25px 15px;
+    width: 120px;
+    background-color: var(--main-header-color);
+}
+.home-button a{
+    font-size: large;
+    font-weight: 600;
+    color: var(--About-text-color);
+}
+.first-btn{
+    background-color: var(--main-header-color);
+}
+.first-btn a{
+    color: var(--span);
+    text-shadow: 1px 1px 80% rgba(255, 255, 255, 0.514);
+}
