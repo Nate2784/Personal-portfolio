@@ -44,10 +44,13 @@ header{
     position:fixed;
     width: 100%;
 }
+header h2{
+    color: var(--main-header-text);
+    
+}
 .Brand h2{
     pointer-events: none;
     font-size: x-large;
-    color: var(--main-header-text);
 }
 .Header-nav ul{
     display: flex;
@@ -73,9 +76,9 @@ header{
 }
 /* hearer end*/
 /* sections */
-.Contact, .About, .Services{
+.Contact, .About, .Skills{
     display: block;
-    padding: 6% 20px 20px 20px;
+    padding: 10% 40px 20px 40px;
 }
 .title{
     padding-left: 10px;
@@ -109,12 +112,16 @@ header{
 }
 .home-button{
     font-weight: 600;
-    border: var(--span) 2px solid;
-    border-radius:10px ;
+    border-style:hidden;
     padding: 8px;
     margin: 25px 15px;
     width: 120px;
-    background-color: var(--main-header-color);
+    background-color: var(--span);
+
+}
+.home-button:hover{
+    border-bottom-color:var(--main-header-color);
+    border-radius:20px 0 20px 0 ;
 }
 .home-button a{
     font-size: large;
@@ -122,7 +129,7 @@ header{
     color: var(--About-text-color);
 }
 .first-btn{
-    background-color: var(--main-header-color);
+    background-color: var(--About-text-color);
 }
 .first-btn a{
     color: var(--span);
