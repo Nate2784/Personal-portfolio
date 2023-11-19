@@ -78,7 +78,7 @@ header h2{
 /* sections */
 .Contact, .About, .Skills{
     display: block;
-    padding: 10% 40px 20px 40px;
+    padding: 7% 40px 20px 40px;
 }
 .title{
     padding-left: 10px;
