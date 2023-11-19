@@ -42,6 +42,7 @@ header{
     font-weight: 600;
     text-shadow: 0.5px 0.5px 13px #00000090;
     position:fixed;
+    z-index: 1;
     width: 100%;
 }
 header h2{
@@ -127,6 +128,9 @@ header h2{
     text-shadow: 1px 1px 80% rgba(255, 255, 255, 0.514);
 }
 /* about page */
+.About{
+    background-color: var(--span);
+}
 .A-wrapper{
     overflow: hidden;
     margin-top: 40px;
@@ -137,7 +141,7 @@ header h2{
 }
 .A-content{
     position: relative;
-    z-index: -1;
+    z-index: 0;
     width:60%;
 }
 .About h1{
@@ -160,7 +164,7 @@ header h2{
 .A-img{
     position: relative;
     width:40%;
-    z-index: -1;
+    z-index: 0;
 }
 .A-img img{
     opacity: 1;
