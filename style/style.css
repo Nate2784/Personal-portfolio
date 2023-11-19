@@ -2,11 +2,11 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins',sans-serif ;
+    font-family: Arial, Helvetica, sans-serif ;
 }
 :root{
     --main-body-color:rgb(237, 255, 255);
-    --main-header-color: rgba(1, 87, 87, 0.514);
+    --main-header-color: rgba(0, 119, 119, 0.337);
     --main-header-text:rgb(255, 255, 255);
     --span:rgb(30, 119, 124);
     --About-text-color:rgb(245, 245, 245);
@@ -31,16 +31,16 @@ body{
 }
 /* hearer */
 header{
-    /* background-color: var(--main-header-color); */
+    background-color: var(--main-header-color);
     border-radius:0 0 0px 30px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(13px);
+    -webkit-backdrop-filter: blur(13px);
     display: flex;
     justify-content: space-between;
     padding:  20px 25px;
     font-weight: 600;
-    text-shadow: 1px 1px 14px #00000092;
+    text-shadow: 0.5px 0.5px 13px #00000090;
     position:fixed;
     width: 100%;
 }
@@ -78,24 +78,15 @@ header h2{
 /* sections */
 .Contact, .About, .Skills{
     display: block;
+    justify-content: center;
     padding: 7% 40px 20px 40px;
-}
-.title{
-    padding-left: 10px;
-    font-size: large;
-    text-decoration: underline 2px;  
-    writing-mode: vertical-lr;
-    text-underline-position: left;
-    text-decoration-style:dotted;
-    text-decoration-color: var(--span);
 }
 /* home page */
 .Home{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(1, 46, 46, 0.7)), url(../Sources/About1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(1, 46, 46, 0.7)), url(../Sources/About_main.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     text-shadow: 2px 2px 4px #000000;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -134,4 +125,37 @@ header h2{
 .first-btn a{
     color: var(--span);
     text-shadow: 1px 1px 80% rgba(255, 255, 255, 0.514);
+}
+/* about page */
+.A-wrapper{
+    margin-top: 40px;
+    padding: 30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.A-content{
+    width:60%;
+}
+.About h1{
+    border-bottom: var(--span) 1px solid;
+}
+.A-content h2{
+    font-size: xx-large;
+    font-weight: 700;
+}
+.A-content p{
+    color: #000000;
+    font-size: medium;
+    width: 60%;
+    margin-top: 40px;
+    padding-left: 30px;
+}
+.A-img{
+    width:40%;
+}
+.A-img img{
+    opacity: 1;
+    width:500px;
+    height: 350px;
 }
