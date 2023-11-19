@@ -109,6 +109,9 @@ header h2{
     margin: 25px 15px;
     width: 120px;
     background-color: var(--span);
+    position: relative;
+    z-index: 0;
+    opacity: 0.8;
 
 }
 .home-button:hover{
