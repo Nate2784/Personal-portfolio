@@ -78,6 +78,7 @@ header h2{
 /* hearer end*/
 /* sections */
 .Contact, .About, .Skills{
+    position: relative;
     display: block;
     justify-content: center;
     padding: 7% 40px 20px 40px;
@@ -131,6 +132,9 @@ header h2{
     text-shadow: 1px 1px 80% rgba(255, 255, 255, 0.514);
 }
 /* about page */
+.About{
+    position: relative;
+}
 .A-wrapper{
     /* background-color: rgba(135, 218, 218, 0.449); */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -175,4 +179,69 @@ header h2{
     opacity: 1;
     width:100%;
     height: auto;
+}
+/* skills section */
+.Skills{
+    display: block;
+    position: relative;
+}
+.Skills h1{
+    border-bottom: var(--span) 1px solid;
+}
+.S-wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    background-color: rgb(221, 249, 250);
+    border-radius: 50px;
+    margin-top: 7%;
+    padding: 5% 5% 0 5%;
+    flex-basis: 40%;
+}
+.s-programming{
+    /* background-color: aqua; */
+     width: 50%;
+}
+.s-Design{
+    /* background-color: rgb(115, 123, 123); */
+    width: 50%;} 
+.s-title{
+    padding-bottom: 30px;
+    color: var(--span);
+}
+.skill{
+    font-weight: thin;
+    padding-bottom:15px;
+    text-transform: uppercase;
+}
+.progress-bar{
+    position: relative;
+    width: 80%;
+    height: 5px;
+    background-color: #c5c4c4;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.progress-bar::after{
+    position: absolute;
+    content:  attr(value);
+    height: 5px;
+    top: -20px;
+    right: 0;
+    color: var(--span);
+    font-size: small;
+}
+.progress-line{
+    position: absolute;
+    width: 0;
+    height: 5px;
+    background-color: var(--span);
+    border-radius: 20px;
+    animation: animate 2.5s cubic-bezier(1, 0.2, 0.2, 1) forwards;
+}
+@keyframes animate{
+    100%{
+        width:100%;
+    }
 }
