@@ -12,7 +12,7 @@
     --About-text-color:rgb(245, 245, 245);
     --cards-color:rgb(255, 255, 255);
     --section-span: rgba(161, 209, 212, 0.692);
-    --text-color: rgb(34, 57, 63);
+    --text-color: rgb(33, 59, 65);
 }
 /* Universal */
 a{
@@ -20,7 +20,7 @@ a{
 }
 
 section{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 }
 span{
@@ -29,6 +29,9 @@ span{
 /* body */
 body{
     background-color: var(--main-body-color);
+}
+p{
+    color: var(--text-color);
 }
 /* hearer */
 header{
@@ -148,6 +151,7 @@ header h2{
     display:flex;
     justify-content: center;
     align-items: center;
+    margin: 80px;
 }
 .A-content{
     position: relative;
@@ -162,7 +166,6 @@ header h2{
     font-weight: 700;
 }
 .A-content p{
-    color: #000000;
     font-size: medium;
     width: 60%;
     margin-top: 40px;
@@ -247,37 +250,49 @@ header h2{
     }
 }
 /* contact form */
+.Contact{
+    /* background-image: none url(/Sources/about_img.jpg);
+    background-repeat: no-repeat; */
+    background-color: rgba(184, 234, 234, 0.574);
+    align-items: center;
+}
+.Contact h1{
+    border-bottom: var(--span) 2px solid;
+}
 .sub-title{
+    margin-top: 40px;
     text-align: center;
 }
 .sub-title p {
     margin-top: 20px;
-    color: --text-color;
+    color: var(--text-color);
 }
 .c-wrapper{
     margin-top: 40px;
-    position: relative;
+    margin-left: 10%;
     display: flex;
-    width: 100%;
+    width: 80%;
     justify-content: space-between;
-    background-color: aliceblue;
+    background-color: rgb(240, 252, 253);
+    border-radius: 50px 0 50px 0;
+    min-height: 50dvh;
+    padding: 30px;
 }
 .Contact-info,.Contact-form{
     padding: 25px;
+    margin: 10px;
 }
 .Contact-info{
-    background-color: aliceblue;
+    /* background-color: rgb(158, 186, 210); */
     width: 50%;
+    align-self: center;
 }
 .info-wrap{
-    margin: 20px;
+    margin-bottom: 20px;
     display: flex;
 }
 .info-wrap h4{
     color: var(--span);
-}
-.info-wrap p{
-    color:--text-color;
 }
 .icon img{
     width: 50px;
@@ -292,8 +307,48 @@ header h2{
     font-size: small;
 }
 .Contact-form{
-    background-color: rgb(221, 249, 250);
+    background-color: rgb(179, 223, 227);
+    border-radius: 10px;
     width: 50%;
+    margin-bottom: 15px;
+}
+.Contact-form h4{
+    text-align: center;
+}
+.Contact-form form{
+    display: flex;
+    flex-direction: column;
+}
+.Contact-form form label{
+    color: var(--span);
+    padding: 10px 0;
+}
+.Contact-form form input{
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    border-style:none;
+    border-bottom: var(--span) 3px solid;
+}
+.Contact-form form textarea{
+    height: 100px;
+    border: none;
+    border-radius: 3px;
+    border-bottom: var(--span) 3px solid;
+}
+.Contact-form form button{
+    margin-top: 10px;
+    background-color: var(--span);
+    color: var(--About-text-color);
+    border-radius: 3px;
+    padding: 10px;
+    border-style: none;
+}
+.Contact-form form button:hover{
+    background-color: var(--About-text-color);
+    color: var(--span);
+    border:  var(--span) 2px solid;
+    pointer-events: pointer;
 }
 .socials{
     display: flex;
