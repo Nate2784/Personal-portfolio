@@ -12,6 +12,7 @@
     --About-text-color:rgb(245, 245, 245);
     --cards-color:rgb(255, 255, 255);
     --section-span: rgba(161, 209, 212, 0.692);
+    --text-color: rgb(34, 57, 63);
 }
 /* Universal */
 a{
@@ -117,7 +118,7 @@ header h2{
 }
 .home-button:hover{
     border-bottom-color:var(--main-header-color);
-    border-radius:20px 0 20px 0 ;
+    border-radius:0 20px 0 20px ;
 }
 .home-button a{
     font-size: large;
@@ -244,4 +245,60 @@ header h2{
     100%{
         width:100%;
     }
+}
+/* contact form */
+.sub-title{
+    text-align: center;
+}
+.sub-title p {
+    margin-top: 20px;
+    color: --text-color;
+}
+.c-wrapper{
+    margin-top: 40px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: aliceblue;
+}
+.Contact-info,.Contact-form{
+    padding: 25px;
+}
+.Contact-info{
+    background-color: aliceblue;
+    width: 50%;
+}
+.info-wrap{
+    margin: 20px;
+    display: flex;
+}
+.info-wrap h4{
+    color: var(--span);
+}
+.info-wrap p{
+    color:--text-color;
+}
+.icon img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 15px;
+}
+.description{
+    padding-top: 8px;
+}
+.description p{
+    font-size: small;
+}
+.Contact-form{
+    background-color: rgb(221, 249, 250);
+    width: 50%;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+}
+.social{
+    margin: 20px;
 }
