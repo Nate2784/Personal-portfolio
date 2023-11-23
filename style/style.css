@@ -140,9 +140,8 @@ header h2{
     position: relative;
 }
 .A-wrapper{
-    /* background-color: rgba(135, 218, 218, 0.449); */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 0 40px 40px 40px;
+    border-radius: 0 10px 10px 40px;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     overflow: hidden;
@@ -152,6 +151,8 @@ header h2{
     justify-content: center;
     align-items: center;
     margin: 80px;
+    border-left: var(--span) 4px solid;
+
 }
 .A-content{
     position: relative;
@@ -198,8 +199,9 @@ header h2{
     width: 100%;
     height: auto;
     background-color: rgb(221, 249, 250);
-    border-radius: 50px;
-    margin-top: 7%;
+    border-radius: 10px 0 40px 10px;
+    border-right: var(--span) 3px solid;
+    margin-top: 60px;
     padding: 5% 5% 0 5%;
     flex-basis: 40%;
 }
@@ -251,9 +253,10 @@ header h2{
 }
 /* contact form */
 .Contact{
-    /* background-image: none url(/Sources/about_img.jpg);
-    background-repeat: no-repeat; */
-    background-color: rgba(184, 234, 234, 0.574);
+    background-color: rgba(192, 236, 236, 0.574);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(33, 75, 75, 0.7)),url(/Sources/contact_img.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
     align-items: center;
 }
 .Contact h1{
@@ -265,7 +268,7 @@ header h2{
 }
 .sub-title p {
     margin-top: 20px;
-    color: var(--text-color);
+    color: var(--main-header-text);
 }
 .c-wrapper{
     margin-top: 40px;
@@ -273,18 +276,20 @@ header h2{
     display: flex;
     width: 80%;
     justify-content: space-between;
-    background-color: rgb(240, 252, 253);
-    border-radius: 50px 0 50px 0;
+    background-color: rgba(240, 252, 253, 0.616);
+    /* border-radius: 50px 0 50px 0; */
     min-height: 50dvh;
-    padding: 30px;
+    /* padding: 30px; */
+    border-left: var(--span) 5px solid;
+    border-radius: 0 10px 10px 40px;
 }
-.Contact-info,.Contact-form{
+.Contact-info{
     padding: 25px;
     margin: 10px;
 }
 .Contact-info{
     /* background-color: rgb(158, 186, 210); */
-    width: 50%;
+    width: 55%;
     align-self: center;
 }
 .info-wrap{
@@ -294,11 +299,12 @@ header h2{
 .info-wrap h4{
     color: var(--span);
 }
-.icon img{
-    width: 50px;
-    height: 50px;
+.icon i{
+    font-size: x-large;
     border-radius: 100%;
     margin-right: 15px;
+    padding: 10px;
+    color: var(--span);
 }
 .description{
     padding-top: 8px;
@@ -307,10 +313,12 @@ header h2{
     font-size: small;
 }
 .Contact-form{
-    background-color: rgb(179, 223, 227);
-    border-radius: 10px;
-    width: 50%;
-    margin-bottom: 15px;
+    background-color: rgba(208, 246, 246, 0.568);
+    /* border-radius: 50px 0 0 0; */
+    width: 45%;
+    /* margin-bottom: 15px; */
+    padding: 30px;
+    padding-top: 40px;
 }
 .Contact-form h4{
     text-align: center;
@@ -332,6 +340,7 @@ header h2{
 }
 .Contact-form form textarea{
     height: 100px;
+    max-width: 100%;
     border: none;
     border-radius: 3px;
     border-bottom: var(--span) 3px solid;
@@ -343,6 +352,7 @@ header h2{
     border-radius: 3px;
     padding: 10px;
     border-style: none;
+    border:  transparent 2px solid;
 }
 .Contact-form form button:hover{
     background-color: var(--About-text-color);
@@ -353,6 +363,14 @@ header h2{
 .socials{
     display: flex;
     justify-content: center;
+}
+.socials a{
+    text-decoration: none;
+    color: var(--span);
+    font-size: 35px;
+}
+.socials a:hover{
+    color: var(--main-header-color);
 }
 .social{
     margin: 20px;
