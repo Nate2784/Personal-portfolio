@@ -185,6 +185,7 @@ header h2{
     border-bottom: var(--span) 1px solid;
 }
 .A-content h2{
+    color: var(--text-color);
     font-size: x-large;
     font-weight: 700;
 }
@@ -234,6 +235,7 @@ header h2{
     color: var(--span);
 }
 .skill{
+    color: var(--text-color);
     font-weight: thin;
     padding-bottom:15px;
     text-transform: uppercase;
@@ -253,7 +255,7 @@ header h2{
     height: 8px;
     top: -20px;
     right: 0;
-    color: var(--span);
+    color: var(--text-color);
     font-size: small;
 }
 .progress-line{
@@ -323,7 +325,7 @@ header h2{
     padding: auto;
 }
 .description p{
-    font-size: small;
+    font-size: medium;
 }
 .Contact-form{
     /* background-color: rgba(208, 246, 246, 0.568); */
