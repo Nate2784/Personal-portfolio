@@ -296,7 +296,7 @@ header h2{
     min-width: 80%;
     justify-content: space-between;
     background-color: rgba(240, 252, 253, 0.586);
-    min-height: 50dvh;
+    height: auto;
     padding: 30px;
     border-left: var(--span) 5px solid;
     border-radius: 0 10px 10px 40px;
