@@ -270,6 +270,7 @@ header h2{
     background-repeat: no-repeat;
     background-size:cover;
     align-items: center;
+    justify-content: center;
 }
 .Contact h1{
     border-bottom: var(--span) 2px solid;
@@ -285,7 +286,6 @@ header h2{
 }
 .c-wrapper{
     margin-top: 40px;
-    margin-left: 10%;
     display: flex;
     min-width: 80%;
     justify-content: space-between;
@@ -465,6 +465,9 @@ footer p{
     .sub-title p {
         font-size: small;
     }  
+    .sub-title p {
+        font-size: x-small;
+    }
     .c-wrapper{
         flex-wrap: wrap-reverse;
         justify-content: center;
