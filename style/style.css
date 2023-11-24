@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 :root{
     --main-body-color:rgb(237, 255, 255);
@@ -289,7 +289,7 @@ header h2{
     display: flex;
     min-width: 80%;
     justify-content: space-between;
-    background-color: rgba(240, 252, 253, 0.616);
+    background-color: rgba(240, 252, 253, 0.586);
     min-height: 50dvh;
     padding: 30px;
     border-left: var(--span) 5px solid;
@@ -320,9 +320,10 @@ header h2{
     font-size: small;
 }
 .Contact-form{
-    background-color: rgba(208, 246, 246, 0.568);
+    /* background-color: rgba(208, 246, 246, 0.568); */
+    border-radius: 30px;
     min-width: 45%;
-    padding: 20px;
+    padding: 25px;
     padding-top: 40px;
     border: var(--span) 1px solid;
 }
